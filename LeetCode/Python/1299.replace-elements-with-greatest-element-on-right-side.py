@@ -12,9 +12,11 @@ class Solution:
 
         for i in range(N):
             l += 1
-            for j in range(l, N):
-                if arr[i] < arr[j]:
-                    arr[i] = arr[j]
+            j = max(arr[l,N])
+            arr[i] = j
+            # for j in range(l, N):
+            #     if arr[i] < arr[j]:
+            #         arr[i] = arr[j]
             if i>0:
                 arr[i-1] = arr[i]
         
