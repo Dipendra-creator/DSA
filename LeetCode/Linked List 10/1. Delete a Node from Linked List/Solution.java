@@ -1,3 +1,7 @@
+// Codestudio Coding Ninjas
+// problem: Delete a Node from Linked List 
+// https://www.codingninjas.com/codestudio/problems/delete-node-in-ll_5881
+
 /****************************************************************
 
 	Following is the Node class already written for the Linked List
@@ -14,6 +18,14 @@
 *****************************************************************/
 
 public class Solution {
+	class LinkedListNode<T> {
+    	T data;
+    	LinkedListNode<T> next;
+    
+    	public LinkedListNode(T data) {
+        	this.data = data;
+    	}
+	}
 	public static LinkedListNode<Integer> deleteNode(LinkedListNode<Integer> head, int pos) {
         // Write your code here.
         if (head == null)
